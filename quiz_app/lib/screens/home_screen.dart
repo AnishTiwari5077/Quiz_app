@@ -16,14 +16,21 @@ class HomeScreen extends StatelessWidget {
             child: ListView(
               children: quizData.keys.map((category) {
                 return Card(
-                  color: Colors.blue,
+                  color: const Color.fromARGB(255, 122, 133, 142),
                   margin: const EdgeInsets.symmetric(
                     horizontal: 16,
                     vertical: 8,
                   ),
                   child: ListTile(
-                    title: Text(category),
-                    trailing: const Icon(Icons.arrow_forward),
+                    title: Text(
+                      category,
+                      style: TextStyle(fontStyle: FontStyle.italic),
+                    ),
+                    trailing: const Icon(
+                      Icons.arrow_forward,
+                      color: Colors.black,
+                      size: 20,
+                    ),
                     onTap: () {
                       Navigator.push(
                         context,

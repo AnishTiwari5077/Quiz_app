@@ -1,7 +1,7 @@
 import 'package:quiz_app/question_model.dart';
 
 final Map<String, List<Question>> quizData = {
-  'General Knowledge': [
+  ' Knowledge': [
     Question(
       question: 'What is the capital of France?',
       options: ['Berlin', 'London', 'Paris', 'Madrid'],
